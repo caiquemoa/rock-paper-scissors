@@ -4,10 +4,10 @@
 	box-sizing: border-box;
 }
 .main {
+	min-height: 100vh;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	height: 100vh;
 	width: 100%;
 	background-color: rgb(237, 228, 228);
 	font-family: 'Roboto', sans-serif;
@@ -16,7 +16,7 @@
 .tittle {
 	font-size: 3rem;
 	font-weight: bolder;
-	margin-top: 5rem;
+	margin-top: 1rem;
 }
 
 .board {
@@ -26,8 +26,33 @@
 	align-items: center;
 }
 .arena {
-	height: 200px;
+	height: 150px;
 	width: 100%;
+	text-align: center;
+}
+.displayResult {
+	font-weight: 500;
+	font-size: 1.5rem;
+	height: 2.5rem;
+}
+.arena img {
+	max-height: 7rem;
+}
+#computerChoice {
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: 'FlipH';
+	float: none;
+}
+.arena > div {
+	display: flex;
+	justify-content: space-around;
+}
+.won {
+	color: rgb(6, 189, 6);
+}
+.lose {
+	color: rgb(255, 16, 16);
 }
 
 .scoreboard {
@@ -41,12 +66,14 @@
 	font-size: 1.6rem;
 }
 
+.game {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 5px;
+}
+
 .game button > img {
-	max-height: 8rem;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	object-position: 15% 15%;
+	max-height: 7rem;
 }
 
 .choice-btn {
@@ -54,6 +81,8 @@
 	border: none;
 	cursor: pointer;
 	transition: 200ms;
+	border: 3px solid black;
+	border-radius: 12px 12px 12px 12px;
 }
 .choice-btn:active {
 	transform: scale(1.1);
