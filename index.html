@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>odin-rps</title>
@@ -9,6 +15,26 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<h1>Rock Paper Scissor</h1>
+		<main class="main">
+			<h1 class="tittle">Odin RPS</h1>
+			<section class="board">
+				<div class="scoreboard">
+					<span id="playerScore">Player score: 0 </span>
+					<span id="computerScore">Computer score: 0 </span>
+				</div>
+				<div class="arena"></div>
+				<div class="game">
+					<button class="choice-btn">
+						<img src="./images/noun-fist-477918.svg" alt="rock" />
+					</button>
+					<button class="choice-btn">
+						<img src="./images/noun-hand-477922.svg" alt="paper" />
+					</button>
+					<button class="choice-btn">
+						<img src="./images/noun-scissors-477919.svg" alt="scissors" />
+					</button>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

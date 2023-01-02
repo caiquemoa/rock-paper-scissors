@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(237, 228, 228);
+	font-family: 'Roboto', sans-serif;
+}
+
+.tittle {
+	font-size: 3rem;
+	font-weight: bolder;
+	margin-top: 5rem;
+}
+
+.board {
+	padding: 2rem 3rem;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+.arena {
+	height: 200px;
+	width: 100%;
+}
+
+.scoreboard {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+}
+.scoreboard > span {
+	font-weight: 500;
+	font-size: 1.6rem;
+}
+
+.game button > img {
+	max-height: 8rem;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	object-position: 15% 15%;
+}
+
+.choice-btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: 200ms;
+}
+.choice-btn:active {
+	transform: scale(1.1);
+}
